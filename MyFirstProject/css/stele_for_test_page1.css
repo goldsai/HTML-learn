@@ -1,0 +1,111 @@
+/*Обнуление*/
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 54px 51px 50px 50px;
+    color: #333333;
+    /* margin-bottom: 20px; */
+}
+h1{
+    font-size: 30px;
+    color: #445161;
+    margin-bottom: 21px;
+}
+h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #445161;
+}
+h3{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #445161;
+    margin-bottom: 19px;
+}
+.txt1 {
+    line-height: 1.79;
+    margin-bottom: 24px;
+}
+.txt2 {
+    font-weight:700;
+    margin-bottom: 20px;
+
+}
+.txt3 {
+    color: #ff0000;
+    margin-bottom: 28px;
+}
+.txt4-1 {
+    margin-bottom: 21px;
+
+    text-align: right;
+}
+.txt4 {
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+.txt5 {
+    margin-bottom: 21px;
+    font-style: italic;
+}
+.txt6 {
+    margin-bottom: 22px;
+    text-decoration-line: underline;
+}
+.txt7 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.txt8 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.txt9 {
+    margin-bottom: 22px;
+    text-decoration-line: line-through;
+}
+.txt10 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 18px;
+}
+.txt11 {
+    text-shadow: 0.5px 0.9px 1px #000;
+}

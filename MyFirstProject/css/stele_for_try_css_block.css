@@ -1,0 +1,108 @@
+
+/*Обнуление*/
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 50px;
+    color: #000;
+    /* line-height: 1.79; */
+}
+.red, .red2{
+    color: red;
+}
+
+.red2{
+    text-indent: 27px;
+    display: inline-block;
+}
+.first_paragraph{
+    width: 50%;
+    line-height: 1.79;
+    margin: 0px 0px 28px 0px;
+}
+
+.second_paragraph{
+    display: block;
+    margin: 0px 0px 3px -1px;
+}
+.link{
+    display: block;
+    margin: 0px 0px 28px -2px;
+    color: #000;
+}
+.third_paragraph{
+    line-height: 1.79;
+    margin: 0px 0px 26px 1px;
+}
+
+.fourth_paragraph{
+    display: inline-block;
+    margin: 0px 37px 35px 1px;
+
+}
+
+.fourth_paragraph_right{
+    display: inline-block;
+}
+
+.v_space4-5{
+    /* margin: 30px; */
+    height: 5px;
+}
+.fifth_paragraph{
+    display: inline-block;
+    margin: 0px 38px 28px 0px;
+}
+.fifth_paragraph_txt{
+    display: inline-block;
+    margin: 0px 27px;
+}
+
+.second_link{
+    display: inline-block;
+    margin: 0px 0px 28px 0px;
+    color: #000;
+}
+
+.sixth_paragraph{
+    display: block;
+    line-height: 1.79;
+}

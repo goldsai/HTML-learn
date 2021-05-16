@@ -1,0 +1,25 @@
+.block1 {
+    color: green;
+}
+
+.block2 {
+    background-color: yellow;
+}
+
+.block3 {
+    font-family: fantasy;
+}
+
+.block1>p {
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    color: blue;
+}
+
+p {
+    text-shadow: 2px 1px 2px #ccc;
+}
+
+.block1 p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}

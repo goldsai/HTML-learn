@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_for_css_possition.css">
+    <title>CSS позиционирование</title>
+</head>
+<body>
+    <div class="convert">
+        <div class="title">Static (по умолчанию)</div>
+        <div class="block">
+            <div class="block_1">block_1</div>
+            <div class="block_2">block_2</div>
+            <div class="block_3">block_3</div>
+        </div>
+    </div>
+    <div class="convert">
+        <div class="title">Relative <hr> <span>Положение элемента устанавливается относительно его исходного положения в коде. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения.</span></div>
+        <div class="block2">
+            <div>block_1</div>
+            <div>block_2</div>
+            <div>block_3</div>
+        </div>
+    </div>
+    <div class="convert">
+        <div class="title">Relative + z-index <hr> <span>Каждый элемент может находиться как ниже, так и выше других объектов веб-страницы, их размещением по z-оси и управляет z-index. Это свойство работает только для элементов, у которых значение position задано как absolute, fixed или relative.</span></div>
+        <div class="block3">
+            <div>block_1</div>
+            <div>block_2+</div>
+            <div>block_3</div>
+        </div>
+    </div>
+    <div class="convert">
+        <div class="title">Absolute+top:5px;left:10px <hr> <span>Элемент якобы вырывается из кода и зависайт в воздухе. Он перестает влиять на остальные элементы. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону относительно родителя у колого задан параметр position: relative; <u><b>Если такого нет то элемент позиционируется относительно окна браузера.</b></u></span></div>
+        <div class="block4">
+            <div>block_1</div>
+            <div>block_2</div>
+            <div>block_3</div>
+        </div>
+    </div>
+    <div class="convert">
+        <div class="title">Absolute + у родителя-position: relative; +top,left <hr> <span>Элемент якобы вырывается из кода и зависайт в воздухе. Он перестает влиять на остальные элементы. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону относительно родителя у колого задан параметр position: relative;</span></div>
+        <div class="block5">
+            <div>block_1</div>
+            <div>block_2</div>
+            <div>block_3</div>
+        </div>
+    </div>
+    <div class="convert">
+        <div class="title">Fixed <hr> <span>Элемент якобы вырывается из кода и зависайт в воздухе. Фиксируется, то есть не скролится вместе с содержимым. Он перестает влиять на остальные элементы. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону относительно окна браузера.</span></div>
+        <div class="block6">
+            <div>block6_1</div>
+            <div>block6_2</div>
+            <div>block6_3 (z-index:10)</div>
+        </div>
+    </div>
+    <div class="convert">
+        <div class="title">Sticky <hr> <span>Это гибридное сочетание значений static и fixed. Изначально єлемент ведет себя как static но после того как скролл доходит до его границы он становиться fixed и прилипает к указанной позиции top или bottom.</span></div>
+        <div class="block7">
+            <div>block7_1</div>
+            <div>block7_2</div>
+            <div>block7_3</div>
+        </div>
+    </div>
+    <div class="convert">
+        <div class="title">Relative <hr> <span>.</span></div>
+        <div class="block8">
+            <div>block_1</div>
+            <div>block_2</div>
+            <div>block_3</div>
+        </div>
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <a href="index.html">на главную</a>
+    </footer>
+    <div>_</div>
+</body>
+</html>

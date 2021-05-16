@@ -1,0 +1,251 @@
+/*Обнуление*/
+/*
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+p {
+  margin-bottom: 20px;
+}
+.areal {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.fontsize50 {
+  font-size: 50px;
+}
+.italic {
+  font-style: italic;
+}
+.oblique {
+  font-style: oblique;
+}
+/* #region font-weight*/
+.bolt {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.bolt p {
+  margin: 0;
+}
+.thin {
+  font-weight: 100;
+  margin: 0px;
+}
+.lite {
+  font-weight: 300;
+}
+.normal {
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
+}
+.semibold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.black {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+/* #endregion */
+
+.colorred {
+  color: rgba(219, 26, 26, 0.726);
+}
+
+/* #region text align*/
+.textright p {
+  border: 1px solid #000;
+
+  margin: 0;
+}
+.textright {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.textcenter {
+  text-align: center;
+}
+.textend {
+  text-align: end;
+}
+.textjustify {
+  text-align: justify;
+}
+.textleft {
+  text-align: left;
+}
+.textstart {
+  text-align: start;
+}
+/* #endregion */
+
+/* #region text-decoration*/
+.decoration {
+    margin: 0;
+  text-decoration-line: underline;
+  /* text-decoration-line: line-through ; */
+  /* text-decoration-style: dotted; */
+}
+.decoration p{
+    margin: 5px;
+    border: 1px solid rgb(141, 100, 100);
+}
+.d1 {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+.d2 {
+  text-decoration-line: line-through;
+  text-decoration-style: dotted;
+}
+.d3 {
+    text-decoration-line: overline;
+  text-decoration-style: double;
+}
+.d4 {
+    text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+.d5 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+.d6 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: brown;
+  text-decoration-thickness: 5px;
+  /* text-decoration-skip-ink: all; */
+}
+.d7 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(22, 79, 145);
+  text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
+  /* text-decoration-skip: space; */
+}
+.d8 {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: rgb(22, 79, 145);
+  text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
+  text-decoration-skip: edges;
+}
+/* #endregion */
+
+/* #region shadow*/
+.shadow{
+    text-shadow: -1px -1px #f0f;
+}
+.sh1{
+    text-shadow: 1px 2px 1px rgb(235, 17, 17);
+}
+.sh2{
+    text-shadow: 1px 2px 2px rgb(50, 17, 235);
+}
+.sh3{
+    text-shadow: 1px 2px 3px rgb(42, 235, 17);
+}
+.sh4{
+    text-shadow: 1px 2px 4px rgb(235, 202, 17);
+}
+.sh21{
+    text-shadow: 0px -2px 1px rgb(235, 17, 17);
+}
+.sh22{
+    text-shadow: 0px -2px 2px rgb(50, 17, 235);
+}
+.sh23{
+    text-shadow: 0px -2px 3px rgb(42, 235, 17);
+}
+.sh24{
+    text-shadow: 0px 0px 10px #000;
+}
+.sh11{
+    text-shadow: -1px 2px 1px rgb(235, 17, 17);
+}
+.sh12{
+    text-shadow: -1px 2px 2px rgb(50, 17, 235);
+}
+.sh13{
+    text-shadow: -1px 2px 3px rgb(42, 235, 17);
+}
+.sh14{
+    text-shadow: -1px 2px 4px rgb(235, 202, 17);
+}
+/* #endregion */
+
+/* #region text-transform*/
+.texttransform{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.tt1{
+    text-transform: uppercase;
+}
+.tt2{
+    text-transform: lowercase;
+}
+.tt3{
+    text-transform: capitalize;
+}
+.tt4{
+    text-transform: none;
+}
+/* #endregion */
+
+.ident{
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.letterspace{
+    letter-spacing: 5px;
+}
+
+.wordspace{
+    word-spacing: 15px;
+}
+.lineheight{
+    line-height: 2em;
+}

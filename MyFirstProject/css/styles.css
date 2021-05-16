@@ -1,0 +1,85 @@
+body {
+  /* background: url("../img/—Pngtree—dotted\ geometric\ pattern_3633086.png");
+ */
+  margin: 0;
+  background-color: rgb(155, 94, 94);
+}
+h1{
+    text-align: center;
+}
+hr{
+    width: 95%;
+    /* border-width: 0; */
+    border-color: white;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0px 0px 5px teal;
+}
+nav {
+  width: 70%;
+  margin: 5px auto;
+  /* padding-top: 15px; */
+  /* background-color: dimgray; */
+  color: white;
+  /* box-shadow: 1px 1px 10px #ccc;
+  border-radius: 5px; */
+}
+
+.card_page{
+    background-color: #656565;
+    box-shadow: 1px 1px 10px #ccc;
+    border-radius: 5px;
+    margin: 15px 15px 0px 15px;
+
+}
+
+.title{
+    background-color: #797979;
+    padding: 3px;
+    border-radius: 5px;
+}
+.desc{
+    padding: 5px 5px 5px 40px;
+}
+.card {
+  width: 400px;
+  margin: 30px auto;
+  background-color: #fff;
+  box-shadow: 0px 5px 9px 4px #423e3e;
+  border-radius: 10px;
+  padding: 20px;
+}
+.card-photo {
+  display: block;
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  margin: 0px auto;
+}
+.card-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-size: 20pt;
+  color: #888;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 14pt;
+}
+
+.card-subtitle {
+  font-size: 16pt;
+  font-style: oblique;
+  text-shadow: pink;
+  font-family: Arial;
+
+  text-align: left;
+  color: #aaa;
+}
+
+.card-list {
+  padding-left: 0;
+  list-style-position: inside;
+  font-size: 12pt;
+}

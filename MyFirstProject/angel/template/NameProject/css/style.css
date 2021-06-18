@@ -1,0 +1,6 @@
+@import "nullstyle.css";
+@import "template.css";
+
+.main-colon{
+	columns: 200px 4;
+}

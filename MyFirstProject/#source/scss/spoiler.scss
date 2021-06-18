@@ -1,0 +1,49 @@
+.spoiler {
+
+   &__item {
+      margin: 0 0 20px 0;
+   }
+
+   &__title {
+      position: relative;
+      padding: 0 0 0 30px;
+
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      cursor: pointer;
+      &::before,
+      &::after{
+         content: '';
+         width: 10px;height: 1px;
+         background: #000;
+         position: absolute;
+         top: 8px;
+         transition: all 0.3s ease 0s;
+      }
+      &::before{
+         transform: rotate(40deg);
+         left: 0;
+      }
+      &::after{
+         transform: rotate(-40deg);
+         left: 8px;
+      }
+
+      &.spoiler-active::after,
+      &.spoiler-active::before{
+         background: red;
+      }
+      &.spoiler-active::before{
+         transform: rotate(-40deg);
+      }
+      &.spoiler-active::after{
+         transform: rotate(40deg);
+      }
+   }
+
+   &__text {
+      // display: none;
+      padding: 10px 0 0 0;
+   }
+}

@@ -1,0 +1,280 @@
+/* #region import*/
+@import "nullstyle.scss";
+@import "footerMyFirstProject.scss";
+@import "main_block.scss";
+/* #endregion */
+
+/* ############################################################## */
+h1{
+    text-align: center;
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
+    font: 1.5em sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 3px #fff;
+    &::after{
+        content: '';
+        display: block;
+        width: 75%;
+        max-width: 300px;
+        height: 2px;
+        background: purple;
+        box-shadow: 0 2px 3px #000;
+        margin: 5px auto;
+    }
+
+    .article &:first-child{
+        margin: 0;
+        // background: red;
+    }
+}
+
+
+$indent: 10px;
+.block .article{
+    text-indent: 0;
+}
+%row{
+    border: $indent solid #ece89d;
+    margin: 0 0 $indent 0;
+    // width: 30%;
+}
+
+%column{
+    border: $indent solid #5e5373;
+    // width: 30%;
+}
+
+%item{
+    background-color: #18b5a4;
+    padding: $indent*2.5;
+    font-size: $indent*2.5;
+    // width: 30%;
+    color: #fff;
+    font-weight: 700;
+}
+
+$radius_frow: 15px;
+.f-row{
+    display: flex;
+    &_wrap{
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        border: 2px solid #000;
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+        flex-basis: 200px;
+        flex-grow: 1;
+        text-align: center;
+        margin: 5px 0;
+        &:first-child{
+            border-left: 2px solid #000;
+            border-top-left-radius: $radius_frow;
+            border-bottom-left-radius: $radius_frow;
+        }
+        &:last-child{
+            border-right: 2px solid #000;
+            border-top-right-radius: $radius_frow;
+            border-bottom-right-radius: $radius_frow;
+            // border-radius: 0 $radius_frow $radius_frow 0;
+        }
+    }
+}
+.flex {
+
+    &__row {
+        @extend %row;
+    }
+
+
+    &__column {
+        @extend %column;
+    }
+
+    &__item {
+        @extend %item;
+    }
+}
+
+.flex {
+
+    &__row1 {
+        display: flex;
+        @extend %row;
+        &_1{
+            align-items: center;
+        }
+    }
+
+    &__column1 {
+        @extend %column;
+        &_1{
+            align-self: stretch;
+        }
+        &_2{
+
+        }
+        &_3{
+            align-self: flex-end;
+        }
+        &_4{
+            order:3;
+        }
+        &_5{
+            order:2;
+        }
+        &_6{
+            order:1;
+        }
+
+        &_7{
+            flex-basis: auto;
+            flex-grow: 1;
+        }
+        &_8{
+            flex-basis: fill;
+            flex-grow: 1;
+            flex-wrap: wrap;
+        }
+        &_9{
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 0;
+
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item1 {
+        @extend %item;
+    }
+}
+
+.flex {
+
+    &__row2 {
+        display: inline-flex;
+        @extend %row;
+    }
+
+    &__column2 {
+        @extend %column;
+    }
+
+    &__item2 {
+        @extend %item;
+    }
+}
+
+.flex {
+
+    &__row2_1 {
+            display: flex;
+            justify-content: flex-start;
+            @extend %row;
+    }
+
+    &__column2_1 {
+        @extend %column;
+    }
+
+    &__item2_1 {
+        @extend %item;
+    }
+
+
+    &__row2_2 {
+            display: flex;
+            justify-content: flex-end;
+            @extend %row;
+    }
+
+    &__column2_2 {
+        @extend %column;
+    }
+
+    &__item2_2 {
+        @extend %item;
+    }
+
+
+    &__row2_3 {
+            display: flex;
+            justify-content: center;
+            @extend %row;
+    }
+
+    &__column2_3 {
+        @extend %column;
+    }
+
+    &__item2_3 {
+        @extend %item;
+    }
+
+
+    &__row2_4 {
+        display: flex;
+        justify-content: space-between;
+        @extend %row;
+    }
+
+    &__row2_5 {
+        display: flex;
+        justify-content: space-around;
+        @extend %row;
+    }
+    &__row3_1 {
+        display: flex;
+        align-items: stretch;
+        @extend %row;
+    }
+    &__row3_2 {
+        display: flex;
+        align-items: flex-start;
+        @extend %row;
+    }
+    &__row3_3 {
+        display: flex;
+        align-items: flex-end;
+        @extend %row;
+    }
+    &__row3_4 {
+        display: flex;
+        align-items: center;
+        @extend %row;
+    }
+    &__row3_5 {
+        display: flex;
+        align-items: baseline;
+        @extend %row;
+
+
+    }
+    &__item3_5{
+        @extend %item;
+        font-size: $indent*3;
+    }
+
+    &__row4_1 {
+        display: flex;
+        flex-wrap: nowrap;
+        @extend %row;
+    }
+
+    &__row4_2 {
+        display: flex;
+        flex-wrap: wrap;
+        @extend %row;
+    }
+
+    &__row4_3 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        @extend %row;
+    }
+}
+

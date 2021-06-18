@@ -1,0 +1,108 @@
+@import "nullstyle.css";
+@import "spoiler.css";
+@font-face {
+	font-family: fontello;
+	src: url(../fonts/fontello.woff2);
+}
+@font-face {
+	font-family: flaticon;
+	src: url(../fonts/flaticon.woff2);
+}
+
+.spoiler__title>span{
+	text-transform:none;
+	letter-spacing: normal;
+}
+.p10{
+	padding: 10px;
+}
+
+.ib{
+	display: inline-block;
+}
+.red_let::first-letter{
+	color: red;
+	font-weight: 700;
+}
+.g_let::first-letter{
+	color: grey;
+	font-weight: 700;
+}
+
+.txt_grey{
+	color: grey;
+}
+.ex::before{
+	content: 'Пример: ';
+	font-family: initial;
+}
+.ex{
+	display: inline-block;
+	margin: 0 0 0 50px;
+	/* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+	font-family: monospace;
+}
+.ex_font{
+	font: italic small-caps bold ultra-condensed 15px/20px Arial;
+}
+
+.browser {
+	display: inline-block;
+	background: rgb(211, 190, 190);
+	border: 1px solid rgb(128, 32, 32);
+
+}
+.br-table {
+
+}
+
+.br{
+	font-family: fontello;
+	text-align: center;
+	color:white;
+
+}
+.br td{
+	background: rgb(160, 88, 88);
+	padding: 3px;
+}
+
+.br-type{
+	font-family: flaticon;
+	text-align: center;
+}
+.br-type td{
+	background: rgb(160, 88, 88);
+}
+
+
+
+.ie::before{
+	content: '\e801';
+}
+
+.ed::before{
+	content: '\e82b';
+}
+.cr::before {
+	content: '\e804';
+}
+.op::before {
+	content: '\e812';
+}
+.sf::before {
+	content: '\e811';
+}
+.fr::before {
+	content: '\e816';
+}
+.aw::before{
+	content: '\e80a';
+}
+
+.pc::before {
+	content: '\e0da';
+}
+.mb::before {
+	content: '\e0d0';
+}

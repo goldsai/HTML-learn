@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_for_flex-1.css">
+    <title>Flex-1</title>
+</head>
+<body>
+    <!--  -->
+    <!-- .block>.title+.article>.flex__row2>(.flex__column2>.flex__item2{$})*3 -->
+    <div class="line"><div class="txt">Свойства флекс контейнера</div></div>
+    <div class="block">
+        <div class="title">Display</div>
+        <div class="article">
+
+            <div class="f-row">
+
+                <div class="f-row__item">
+                    <h1>DIV</h1>
+                    <div class="flex">
+                        <div class="flex__row">
+                            <div class="flex__column">
+                                <div class="flex__item">1</div>
+                            </div>
+                            <div class="flex__column">
+                                <div class="flex__item">2</div>
+                            </div>
+                            <div class="flex__column">
+                                <div class="flex__item">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-row__item">
+                    <h1>Display: flex</h1>
+                    <div class="flex">
+                        <div class="flex__row1">
+                            <div class="flex__column1">
+                                <div class="flex__item1">1</div>
+                            </div>
+                            <div class="flex__column1">
+                                <div class="flex__item1">2 <br>g</div>
+                            </div>
+                            <div class="flex__column1">
+                                <div class="flex__item1">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="f-row__item">
+                    <h1>Display: inline-flex</h1>
+                    <div class="flex">
+                        <div class="flex__row2">
+                            <div class="flex__column2">
+                                <div class="flex__item2">1</div>
+                            </div>
+                            <div class="flex__column2">
+                                <div class="flex__item2">2</div>
+                            </div>
+                            <div class="flex__column2">
+                                <div class="flex__item2">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="block">
+        <div class="title">Justify-content</div>
+        <div class="article">
+            <div class="f-row">
+
+                <div class="f-row__item">
+                    <h1>Justify-content: flex-start</h1>
+                    <div class="flex">
+                        <div class="flex__row2_1">
+                            <div class="flex__column2_1">
+                                <div class="flex__item2_1">1</div>
+                            </div>
+                            <div class="flex__column2_1">
+                                <div class="flex__item2_1">2</div>
+                            </div>
+                            <div class="flex__column2_1">
+                                <div class="flex__item2_1">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-row__item">
+                    <h1>Justify-content: flex-end</h1>
+                    <div class="flex">
+                        <div class="flex__row2_2">
+                            <div class="flex__column2_2">
+                                <div class="flex__item2_2">1</div>
+                            </div>
+                            <div class="flex__column2_2">
+                                <div class="flex__item2_2">2</div>
+                            </div>
+                            <div class="flex__column2_2">
+                                <div class="flex__item2_2">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="f-row__item">
+                    <h1>Justify-content: center</h1>
+                    <div class="flex">
+                        <div class="flex__row2_3">
+                            <div class="flex__column2_3">
+                                <div class="flex__item2_3">1</div>
+                            </div>
+                            <div class="flex__column2_3">
+                                <div class="flex__item2_3">2</div>
+                            </div>
+                            <div class="flex__column2_3">
+                                <div class="flex__item2_3">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="f-row">
+
+                <div class="f-row__item">
+                    <h1>Justify-content: space-between</h1>
+                    <div class="flex">
+                        <div class="flex__row2_4">
+                            <div class="flex__column2_1">
+                                <div class="flex__item2_1">1</div>
+                            </div>
+                            <div class="flex__column2_1">
+                                <div class="flex__item2_1">2</div>
+                            </div>
+                            <div class="flex__column2_1">
+                                <div class="flex__item2_1">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-row__item">
+                    <h1>Justify-content: space-around</h1>
+                    <div class="flex">
+                        <div class="flex__row2_5">
+                            <div class="flex__column2_1">
+                                <div class="flex__item2_1">1</div>
+                            </div>
+                            <div class="flex__column2_1">
+                                <div class="flex__item2_1">2</div>
+                            </div>
+                            <div class="flex__column2_1">
+                                <div class="flex__item2_1">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="block">
+        <div class="title">Align-items</div>
+        <div class="article">
+            <div class="f-row">
+
+                <div class="f-row__item">
+                    <h1>Align-items: stretch</h1>
+                    <div class="flex">
+                        <div class="flex__row3_1">
+                            <div class="flex__column1">
+                                <div class="flex__item1">1</div>
+                            </div>
+                            <div class="flex__column1">
+                                <div class="flex__item1">2 <br> Длинный текст во второй ячейке</div>
+                            </div>
+                            <div class="flex__column1">
+                                <div class="flex__item1">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-row__item">
+                    <h1>Align-items: baseline</h1>
+                    <div class="flex">
+                        <div class="flex__row3_5">
+                            <div class="flex__column1">
+                                <div class="flex__item1">1</div>
+                            </div>
+                            <div class="flex__column1">
+                                <div class="flex__item3_5">2 <br> Длинный текст во второй ячейке</div>
+                            </div>
+                            <div class="flex__column1">
+                                <div class="flex__item1">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="f-row">
+               <div class="f-row__item">
+                    <h1>Align-items: flex-start</h1>
+                    <div class="flex">
+                        <div class="flex__row3_2">
+                            <div class="flex__column2">
+                                <div class="flex__item2">1</div>
+                            </div>
+                            <div class="flex__column2">
+                                <div class="flex__item2">2 <br> Длинный</div>
+                            </div>
+                            <div class="flex__column2">
+                                <div class="flex__item2">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="f-row__item">
+                    <h1>Align-items: flex-end</h1>
+                    <div class="flex">
+                        <div class="flex__row3_3">
+                            <div class="flex__column2">
+                                <div class="flex__item2">1</div>
+                            </div>
+                            <div class="flex__column2">
+                                <div class="flex__item2">2 <br> Длинный</div>
+                            </div>
+                            <div class="flex__column2">
+                                <div class="flex__item2">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="f-row__item">
+                    <h1>Align-items: center</h1>
+                    <div class="flex">
+                        <div class="flex__row3_4">
+                            <div class="flex__column2">
+                                <div class="flex__item2">1</div>
+                            </div>
+                            <div class="flex__column2">
+                                <div class="flex__item2">2 <br> Длинный</div>
+                            </div>
+                            <div class="flex__column2">
+                                <div class="flex__item2">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="block">
+        <div class="title">Flex-wrap</div>
+        <div class="article">
+            <div class="f-row">
+
+                <div class="f-row__item">
+                    <h1>flex-wrap: nowrap</h1>
+                    <div class="flex">
+                        <div class="flex__row4_1">
+                            <div class="flex__column2_1">
+                                <div class="flex__item2_1">1</div>
+                            </div>
+                            <div class="flex__column2_1">
+                                <div class="flex__item2_1">2</div>
+                            </div>
+                            <div class="flex__column2_1">
+                                <div class="flex__item2_1">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-row__item">
+                    <h1>flex-wrap: wrap</h1>
+                    <div class="flex">
+                        <div class="flex__row4_2">
+                            <div class="flex__column2_2">
+                                <div class="flex__item2_2">1</div>
+                            </div>
+                            <div class="flex__column2_2">
+                                <div class="flex__item2_2">2</div>
+                            </div>
+                            <div class="flex__column2_2">
+                                <div class="flex__item2_2">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="f-row__item">
+                    <h1>flex-wrap: wrap-reverse</h1>
+                    <div class="flex">
+                        <div class="flex__row4_3">
+                            <div class="flex__column2_3">
+                                <div class="flex__item2_3">1</div>
+                            </div>
+                            <div class="flex__column2_3">
+                                <div class="flex__item2_3">2</div>
+                            </div>
+                            <div class="flex__column2_3">
+                                <div class="flex__item2_3">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="line"><div class="txt">Свойства флекс элемента</div></div>
+
+    <div class="block">
+        <div class="title">Align-self, Order</div>
+        <div class="article">
+            <div class="f-row f-row_wrap">
+
+                <div class="f-row__item">
+                    <h1>align-self: </h1>
+                    <div class="flex">
+                        <div class="flex__row1 flex__row1_1">
+                            <div class="flex__column1 flex__column1_1">
+                                <div class="flex__item1">1</div>
+                            </div>
+                            <div class="flex__column1 flex__column1_2">
+                                <div class="flex__item1">2 <br> высокий блок</div>
+                            </div>
+                            <div class="flex__column1 flex__column1_3">
+                                <div class="flex__item1">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-row__item">
+                    <h1>Order: </h1>
+                    <div class="flex">
+                        <div class="flex__row1 flex__row1_1">
+                            <div class="flex__column1 flex__column1_4">
+                                <div class="flex__item1">1</div>
+                            </div>
+                            <div class="flex__column1 flex__column1_5">
+                                <div class="flex__item1">2 <br> высокий блок</div>
+                            </div>
+                            <div class="flex__column1 flex__column1_6">
+                                <div class="flex__item1">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="f-row f-row_wrap">
+                <div class="f-row__item">
+                    <h1>Flax-basis; flex-grow; flex-shrink</h1>
+                    <div class="flex">
+                        <div class="flex__row1">
+                            <div class="flex__column1 flex__column1_7">
+                                <div class="flex__item1">1</div>
+                            </div>
+                            <div class="flex__column1 flex__column1_8">
+                                <div class="flex__item1">2 <br> высокий блок</div>
+                            </div>
+                            <div class="flex__column1 flex__column1_9">
+                                <div class="flex__item1">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="f-row__item">
+                    <h1>flex-wrap: wrap-reverse</h1>
+                    <div class="flex">
+                        <div class="flex__row4_3">
+                            <div class="flex__column2_3">
+                                <div class="flex__item2_3">1</div>
+                            </div>
+                            <div class="flex__column2_3">
+                                <div class="flex__item2_3">2</div>
+                            </div>
+                            <div class="flex__column2_3">
+                                <div class="flex__item2_3">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <footer>
+        <a href="index.html"><span>на главную</span></a>
+    </footer>
+</body>
+</html>

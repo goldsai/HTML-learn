@@ -1,0 +1,76 @@
+@import "nullstyle.scss";
+@import "footerMyFirstProject.scss";
+
+.wrapper{
+    display: flex;
+    padding: 5px;
+    // min-height: 100%;
+}
+
+.flex_jc{
+    // justify-content: space-between;
+    // align-items: center;
+}
+.flex-container{
+    background: rgb(49, 155, 182);
+    border: 1px solid #000;
+}
+.flex-el{
+    text-align: center;
+
+}
+.flex-element{
+    background: rgb(200, 212, 20);
+    border: 1px solid rgb(247, 6, 6);
+    // border-radius: 50%;
+    margin: 5px;
+
+}
+
+.flex-container2 {
+    display: flex;
+    border: 1px solid #000;
+    // align-content: space-evenly;
+    flex-flow: row wrap;
+    width: 2600px;
+    //min-height: 100%;
+    height: 500px;
+}
+.flex-container2 >div{
+    background: rgb(71, 89, 189);
+    margin: 15px;
+    padding: 10px;
+    font-size: 5vw;
+}
+.flex-el1 {
+
+}
+.flex-el2 {
+
+}
+.flex-el3 {
+}
+.flex-el4 {
+}
+.flex-el5 {
+}
+.flex-el6 {
+}
+.flex-el7 {
+}
+.flex-el8 {
+}
+.flex-el9 {
+}
+.flex-el10 {
+}
+.flex-el11 {
+}
+.flex-el12 {
+}
+.flex-el13 {
+}
+.flex-el14 {
+}
+.flex-el15 {
+}

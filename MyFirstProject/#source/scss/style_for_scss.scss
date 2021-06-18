@@ -1,0 +1,141 @@
+@import "nullstyle.scss";
+@import "footerMyFirstProject.scss";
+
+$fz:70px;
+$color_1: #001;
+$color_2: #333;
+$color_3: #ddd;
+
+
+body{
+      padding: 31px;
+    // padding-bottom: 100px;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    &::after{
+        content: ' .';
+        // display: none;
+        visibility: hidden;
+        background: #000;
+    }
+ }
+hr{
+    background: white;
+    height: 1px;
+    margin: 2px 5px;
+}
+
+.box{
+    position: relative;
+    display: flex;
+    margin: 70px 0 0 0;
+    justify-content: center;
+
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        font-size: ($fz+4);
+        margin-top: 0px;
+        padding: 0 20px;
+        position: absolute;
+        top: 0;left: 0;
+        text-transform: uppercase;
+
+        background: white;
+    }
+    &:before{
+        content: '';
+        display: block;
+        width: 90%;
+        height: 4px;
+        background:$color_1;
+        position: absolute;
+        top: 22px;
+
+    }
+}
+.block{
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 0 #000;
+    font-size: ($fz/2);
+    line-height: 1.5;
+    text-indent: 30px;
+    text-align: justify;
+    width: calc(90% - 55px);
+    margin: 100px auto;
+    position: relative;
+
+    span{
+        color:green;
+        display: inline-block;
+        &:hover{
+            border: 1px solid #000;
+            cursor: wait;
+        }
+    }
+
+    .block_text{
+        font-size: $fz;
+        line-height: 1.2;
+        letter-spacing: 2px;
+        &::first-line{
+
+            text-shadow: -2px 2px 3px grey;
+        }
+        &::after{
+            /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+            content: '11';
+            display: block;
+            text-indent: 4px;
+            position: absolute;
+            bottom: 0;
+            right: 0px;
+            margin: 10px;
+            // text-align: ;
+            text-align: center;
+            padding: 0;
+            // vertical-align: baseline;
+            line-height: 40px;
+            font-size: ($fz*0.6);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            // border: 1px solid #333;
+            box-shadow: 2px 2px 0 1px black;
+            background: #aaa;
+            &:hover{
+                // &::after{
+
+                    border: 1px solid #333;
+                    box-shadow: 1px 1px 0 1px red;
+                // }
+            }
+        }
+        // text-decoration: line-through dotted grey;
+        // text-decoration-thickness: ;
+        padding: 10px 10px 10px 40px;
+        margin-bottom: 30px;
+        background: #ddd url('../img/group-1.png') -150px -50px/80% no-repeat;
+        // background-size: 50%;
+        // margin-left: 30px;
+        position: relative;
+        box-shadow: 4px 4px 4px 4px black;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 100%;
+            background: green;
+            border-right: 2px solid #006000;
+            box-shadow: inset 5px 0 15px 0 orange;
+        }
+    }
+    &::first-letter{
+        color: red;
+        font-size: ($fz*0.7);
+        text-shadow: 0px 0px 5px #333;
+    }
+}

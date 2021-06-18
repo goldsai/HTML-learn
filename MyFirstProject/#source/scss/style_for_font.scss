@@ -1,0 +1,21 @@
+@import "nullstyle.scss";
+@import "footerMyFirstProject.scss";
+@import "main_block.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'pf_din_text_cond_promedium';
+    src: url('../fonts/pfdintextcondpro-medium-webfont.eot');
+    src: url('../fonts/pfdintextcondpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdintextcondpro-medium-webfont.woff2') format('woff2'),
+         url('../fonts/pfdintextcondpro-medium-webfont.woff') format('woff'),
+         url('../fonts/pfdintextcondpro-medium-webfont.svg#pf_din_text_cond_promedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.article{
+    font-family: 'PT Sans', sans-serif;
+}

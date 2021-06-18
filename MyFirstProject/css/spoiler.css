@@ -1,0 +1,57 @@
+.spoiler__item {
+  margin: 0 0 20px 0;
+}
+
+.spoiler__title {
+  position: relative;
+  padding: 0 0 0 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.spoiler__title::before, .spoiler__title::after {
+  content: '';
+  width: 10px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  top: 8px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.spoiler__title::before {
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
+  left: 0;
+}
+
+.spoiler__title::after {
+  -webkit-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  left: 8px;
+}
+
+.spoiler__title.spoiler-active::after, .spoiler__title.spoiler-active::before {
+  background: red;
+}
+
+.spoiler__title.spoiler-active::before {
+  -webkit-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.spoiler__title.spoiler-active::after {
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.spoiler__text {
+  padding: 10px 0 0 0;
+}

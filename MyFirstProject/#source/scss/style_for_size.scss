@@ -1,0 +1,32 @@
+@import "nullstyle.scss";
+@import "footerMyFirstProject.scss";
+@import "main_block.scss";
+
+.article:nth-child(ev){
+    font-size: 60px;
+}
+.article {
+    h2{
+        border: 1px solid #000;
+        height: 2ch;
+        // line-height: 2em;
+        font-size: 20px;
+    }
+    p{
+        border: 1px solid red;
+        margin-top: 20px;
+        height: 3em;
+        // line-height: 3em;
+        font-size: 1rem;
+    }
+}
+
+.num{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 2em;
+}
+.num:hover,
+.num:hover ~ .num {
+    color: red; /* Красный цвет */
+   }

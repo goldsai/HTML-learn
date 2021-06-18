@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_for_bem.css">
+    <title>BEM</title>
+</head>
+<body>
+    <div class="block">
+        <div class="title">Заголовок</div>
+        <div class="article">
+            <p>Блок</p>
+            <strong>Блок</strong> - функционально независивый элемент страницы. <br>
+            <strong>Имя класса</strong> для блока <b>должно</b> отвечать на вопрос, <em>что это?</em>
+            <br>
+            В стиле блока не следует задавать внешнюю геометрию, т.е. padding, margin, position и т.п. <br>
+            Этим гарантируется его универсальность и возможность повторного использования. <br>
+            <br>
+
+            <p>Элемент</p>
+            <strong>Элемент</strong> - неотемлемая состовная часть блока, которая не может использоваться в отрыве от него. <br>
+            <strong>Имя класса</strong> элемента <b>должно</b> отвечать на вопрос, <em>что это?</em> <br>
+            <strong>Имя класса</strong> элемента <b>должно</b> состоять из <em>Имя блока</em> + <em>_ _</em> + <em>Имя элемента</em>. Например, если блок <code>.menu</code>, то элемент <code>.menu__link</code> <br>
+            Элемент это <b>всегда</b> часть блока, а не другого элемента, но элементы можно влаживать друг в друга (любой глубиной). <br>
+            Элемент <b>всегда должен быть</b> частью блока и не использоваться отдельно от него. <br>
+            Элемент это не обязательный компонент блока, т.е. у блока может и не быть элементов. <br>
+
+            <br>
+            <em>Когда создавать блок, а когда элемент?</em>
+            <br>
+            Блоки применяются повторно, а элементы используются только внутри блока и отдельно от него не используются.
+            <br>
+            <br>
+
+            <p>Модификатор</p>
+            <strong>Модификатор</strong> применяется для:
+            <ul>
+                <li>определения или уточнения внешнего вида элемента</li>
+                <li>состояния</li>
+                <li>или поведения </li>
+            </ul>
+            блока или элемента. Когда нужно выделить некий объект из множества такигже.
+            <br>
+            <strong>Имя класса</strong> модификатора должно отвечать на вопрос <em>какой?</em> <em>как выглядит?</em><em>как себя ведет?</em> <b>либо</b> <em>какое состояние?</em> <br>
+            <strong>Имя класса</strong> модификатора может формироваться как:
+            <ul>
+                <li><em>Имя блока</em> + <em>_ _</em> + <em>Имя элемента</em> + <em>_</em> <em>Имя модификатора</em></li>
+                <li><em>Имя блока</em> + <em>_</em> + <em>Имя модификатора</em></li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <p>&par;<strong>МИКС</strong></p>
+            Позволяют совмещать элементы и блоки. Например: <br>
+            <code>
+
+                &lsaquo;!-- Блок `about` --&rsaquo; <br>
+                &lsaquo;div class=" about"&rsaquo;<br>
+                &ThinSpace;&lsaquo;!-- Элемент `title` --&rsaquo;<br>
+                &ThinSpace;&lsaquo;div class="about__title title"&rsaquo;&lsaquo;/div&rsaquo;<br>
+                &ThinSpace;&lsaquo;!-- Элемент `subtitle` --&rsaquo;<br>
+                &ThinSpace;&lsaquo;div class=" about__subtitle subtitle"&rsaquo;&lsaquo;/div&rsaquo;<br>
+                &lsaquo;/div&rsaquo;<br>
+            </code>
+        </div>
+
+    </div>
+    <footer>
+        <a href="index.html"><span>на главную</span></a>
+    </footer>
+</body>
+</html>

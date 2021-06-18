@@ -49,33 +49,49 @@
 .browser {
 	display: inline-block;
 	background: rgb(211, 190, 190);
-	border: 1px solid rgb(128, 32, 32);
+	border: 1px solid rgb(32, 93, 128);
 
 }
 .br-table {
-
+	/* border-color: white; */
+	background: white;
 }
 
 .br{
 	font-family: fontello;
 	text-align: center;
-	color:white;
+	font-size: 25px;
+	color: white;
+	text-shadow: 0 0 4px black;
 
 }
 .br td{
-	background: rgb(160, 88, 88);
-	padding: 3px;
+	background: rgb(250, 165, 165);
+	padding: 10px;
 }
 
 .br-type{
 	font-family: flaticon;
 	text-align: center;
+	color: rgb(107, 80, 80);
+	font-size: 15px;
+	font-weight: 700;
+
 }
 .br-type td{
-	background: rgb(160, 88, 88);
+	background: rgb(250, 165, 165);
+	padding: 5px;
 }
 
-
+.br-v{
+	text-align: center;
+	color: white;
+	/* padding: 10px; */
+}
+.br-v td{
+	background: rgb(172, 90, 90);;
+	padding: 5px;
+}
 
 .ie::before{
 	content: '\e801';
@@ -105,4 +121,20 @@
 }
 .mb::before {
 	content: '\e0d0';
+}
+
+.ok::before{
+	content: '\e81b';
+	font-family: fontello;
+	margin-right: 5px;
+}
+
+.warn{
+	background: yellow;
+}
+.warn span::before{
+	content: '\e803';
+	font-family: fontello;
+	margin-right: 5px;
+
 }

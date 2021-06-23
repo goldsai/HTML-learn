@@ -15,8 +15,71 @@
         <div class="spoiler__title">Свойства текста</div>
         <div class="spoiler__text p10" id="txt">
           <div class="spoiler__item">
-            <div class="spoiler__title g_let">box-decoration-break <span>Указывает, как оформлять фрагмент текста при его переносе на другую строку.</span></div>
-            <div class="spoiler__text txt_grey">На данный момент, по этому св-тву, данные не добавлены, но в скором времени они будут добавлены.</div>
+            <div class="spoiler__title red_let">
+              box-decoration-break <span>Указывает, как оформлять фрагмент текста при его переносе на другую строку.</span>
+              <br>
+              <span class="ex">box-decoration-break: clone;</span>
+            </div>
+            <div class="spoiler__text ml1">
+              <p>Указывает, как оформлять фрагмент текста при его переносе на другую строку. Работает только для следующих свойств: background, border, border-image, box-shadow, clip-path, margin и padding.</p>
+              <div class="browser">
+                <table class="br-table">
+                  <tr class="br">
+                    <td><span class="ie" title="Internet Explorer"></span></td>
+                    <td><span class="ed" title="Edge"></span></td>
+                    <td><span class="cr" title="Chrome"></span></td>
+                    <td colspan="2"><span class="op" title="Opera"></span></td>
+                    <td colspan="2"><span class="sf" title="Safari"></span></td>
+                    <td colspan="2"><span class="fr" title="FireFox"></span></td>
+                    <td><span class="aw" title="Android WebView"></span></td>
+                  </tr>
+                  <tr class="br-type">
+                    <td><span class="pc" title="ПК"></span></td> <!--IE-->
+                    <td><span class="pc" title="ПК"></span></td><!--Edge-->
+                    <td><span class="pc" title="ПК"></span></td><!--Chrome-->
+                    <td><span class="pc" title="ПК"></span></td><!--Opera-->
+                    <td><span class="mb" title="Мобильный"></span></td>
+                    <td><span class="pc" title="ПК"></span></td><!--Safari-->
+                    <td><span class="mb" title="Мобильный"></span></td>
+                    <td><span class="pc" title="ПК"></span></td><!--FireFox-->
+                    <td><span class="mb" title="Мобильный"></span></td>
+                    <td><span class="mb" title="Мобильный"></span></td><!--Android WebViev-->
+                  </tr>
+                  <tr class="br-v">
+                    <td class="no"><span> </span></td><!--IE-->
+                    <td class="warn"><span>79</span></td><!--Edge-->
+                    <td class="warn"><span>22</span></td><!--Chrome-->
+                    <td class="warn"><span>15</span></td><!--Opera-->
+                    <td class="warn"><span>46</span></td>
+                    <td class="warn"><span>6.1</span></td><!--Safari-->
+                    <td class="warn"><span>7</span></td>
+                    <td class="ok"><span>32</span></td><!--FireFox-->
+                    <td class="ok"><span>68</span></td>
+                    <td class="warn"><span>4.4</span></td><!--Android WebViev-->
+                  </tr>
+                </table>
+              </div>
+              <div class="field">
+                <h2>Примечание</h2>
+                <p>Браузеры Edge, Chrome, Opera, Safari поддерживают свойство -webkit-box-decoration-break.</p>
+              </div>
+
+              <div class="field">
+                <h2>Синтаксис</h2>
+                <p>box-decoration-break: slice | clone</p>
+                <h2>Значения</h2>
+                <table class="values">
+                  <tr class="value">
+                    <td>slice</td>
+                    <td>Каждый фрагмент разрезается в месте переноса и никакие эффекты оформления на месте «разреза» не отображаются. В частности, граница не показывается, тень не выводится, радиус скругления работает только для всего блока целиком.</td>
+                  </tr>
+                  <tr class="value">
+                    <td>clone</td>
+                    <td>Каждый фрагмент оформляется независимо. Ко всем фрагментам отдельно применяется рамка, тень, фон и др.</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
           <div class="spoiler__item">
             <div class="spoiler__title g_let">caret-color <span>Задаёт цвет текстового курсора, который отображается в текстовых полях формы, а также для элементов с атрибутом contenteditable.</span></div>
@@ -162,8 +225,12 @@
         <div class="spoiler__title spoiler-active">Свойства шрифта</div>
         <div class="spoiler__text p10" id="font">
           <div class="spoiler__item">
-            <div class="spoiler__title red_let">@font-face</div>
-            <div class="spoiler__text">
+            <div class="spoiler__title red_let">
+              @font-face <span>Определяет настройки шрифтов, а также позволяет загрузить специфичный шрифт на компьютер пользователя.</span>
+              <br>
+              <span class="ex">@font-face {font-family: "Open Sans";&emsp;src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"); }</span>
+            </div>
+            <div class="spoiler__text ml1">
               <div class="browser">
                 <table class="br-table">
                   <tr class="br">
@@ -189,17 +256,424 @@
                   </tr>
                   <tr class="br-v">
                     <td class="warn"><span>5.5</span></td>
-                    <td><span class="ok">9</span></td>
-                    <td><span class="ok">12</span></td>
-                    <td><span class="ok">4</span></td>
-                    <td><span class="warn">10</span></td>
-                    <td><span class="ok">12</span></td>
-                    <td><span class="ok">10</span></td>
-                    <td><span class="ok">3.1</span></td>
-                    <td><span class="ok">5</span></td>
-                    <td><span class="ok">3.5</span></td>
-                    <td><span class="ok">1</span></td>
-                    <td><span class="ok">2.1</span></td>
+                    <td class="ok"><span>12</span></td>
+                    <td class="ok"><span>9</span></td>
+                    <td class="ok"><span>4</span></td>
+                    <td class="warn"><span>10</span></td>
+                    <td class="ok"><span>12</span></td>
+                    <td class="ok"><span>10</span></td>
+                    <td class="ok"><span>3.1</span></td>
+                    <td class="ok"><span>5</span></td>
+                    <td class="ok"><span>3.5</span></td>
+                    <td class="ok"><span>1</span></td>
+                    <td class="ok"><span>2.1</span></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="field">
+                <h2>Синтаксис</h2>
+                <p>@font-face { свойства шрифта } </p>
+              </div>
+              <div class="field">
+                <h2>Значения</h2>
+                <table class="values">
+                  <tr class="value">
+                    <td>font-display </td>
+                    <td>Определяет как отображается шрифт, основываясь на том, был ли он загружен и готов ли к использованию.</td>
+                  </tr>
+                  <tr class="desc">
+                    <td>&nbsp;</td>
+                    <td>
+                      <div class="spoiler">
+                        <div class="spoiler__item box">
+                          <div class="spoiler__title red_let">Описание</div>
+                          <div class="spoiler__text">
+                            <p>Дескриптор font-display определяет то, как шрифт, подключённый через font face будет отображаться в зависимости от того, загрузился ли он и готов ли к использованию.</p>
+                            <div class="field">
+                              <h3>Значения</h3>
+                              <table class="values tb_bg">
+                                <tr class="value">
+                                  <td>auto</td>
+                                  <td>Стратегию загрузки шрифта определяет пользовательский агент.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>block</td>
+                                  <td>Для шрифта задаётся короткий период блокировки и бесконечный период подмены.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>swap</td>
+                                  <td>Для шрифта не задаётся период блокировки и задаётся бесконечный период подмены.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>fallback</td>
+                                  <td>Для шрифта задаётся очень короткий период блокировки и короткий период подмены.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>optional</td>
+                                  <td>Для шрифта задаётся очень короткий период блокировки и не задаётся период подмены.</td>
+                                </tr>
+                              </table>
+                              <div class="spoiler">
+                                <div class="spoiler__item box">
+                                  <div class="spoiler__title">Временная шкала отображения шрифтов</div>
+                                  <div class="spoiler__text">
+                                    <p>Временная шкала отображения шрифтов основывается на таймере, который запускается в момент, когда пользовательский агент начинает попытки по применению загруженного шрифта.  Эта временная шкала разделена на три отрезка, приведённых ниже, которые диктуют поведение рендеринга любых элементов с использованием шрифта.</p>
+                                    <div class="description-text">
+                                      <h4>Период блокировки шрифта (Font block period)</h4>
+                                      <p>Если шрифт не загружен, любой элемент, который пытается его использовать, должен быть отрендерен с невидимым запасным шрифтом. Если за это время шрифт успешно загружается, то он используется, как обычно.</p>
+                                      <h4>Период подмены шрифта (Font swap period)</h4>
+                                      <p>Если шрифт не загружен, любой элемент, который пытается его использовать, должен быть отрендерен запасным шрифтом. Если за это время шрифт успешно загружается, то он используется, как обычно.</p>
+                                      <h4>Период отказа шрифта (Font failure period)</h4>
+                                      <p>Если шрифт не загружен, пользовательский агент воспринимает это как неудачную загрузку и использует запасной шрифт.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="value">
+                    <td>font-family</td>
+                    <td>Указывает имя шрифта, которое будет использоваться для задания свойств шрифта.</td>
+                  </tr>
+                  <tr class="desc">
+                    <td>&nbsp;</td>
+                    <td>
+                      <div class="spoiler">
+                        <div class="spoiler__item box">
+                          <div class="spoiler__title red_let">Описание</div>
+                          <div class="spoiler__text">
+                            <p>CSS дескриптор font-family позволяет авторам указывать font family для шрифта, указанного в правиле @font-face.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="value">
+                    <td>font-stretch</td>
+                    <td>Значение font-stretch. Устанавливает узкое, нормальное или широкое начертание шрифта.</td>
+                  </tr>
+                  <tr class="desc">
+                    <td>&nbsp;</td>
+                    <td>
+                      <div class="spoiler">
+                        <div class="spoiler__item box">
+                          <div class="spoiler__title red_let">Описание</div>
+                          <div class="spoiler__text">
+                            <p>Позволяет авторам указывать нормальное, конденсируется, или расширенное лицо для шрифтов , указанных в @font-faceправиле.</p>
+                            <p>Для определенного семейства шрифтов авторы могут загрузить различные начертания шрифта, которые соответствуют разным стилям одного и того же семейства шрифтов, а затем использовать font-stretch дескриптор для явного указания растяжения начертания шрифта. Значения дескриптора CSS такие же, как у соответствующего свойства шрифта.</p>
+                            <div class="field">
+                              <h3>Значения</h3>
+                              <table class="values tb_bg">
+                                <tr class="value">
+                                  <td>normal</td>
+                                  <td>Задает нормальное начертание шрифта.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>semi-condensed</td>
+                                  <td rowspan="4">Задает более сжатое начертание шрифта, чем обычно, с очень сжатым шрифтом как наиболее сжатое.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>condensed</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>extra-condensed</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>ultra-condensed</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>semi-expanded</td>
+                                  <td rowspan="4">Задает более расширенное начертание шрифта, чем обычно, причем сверхрасширенное как наиболее расширенное.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>expanded</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>extra-expanded</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>ultra-expanded</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>Процентное</td>
+                                  <td>Значение в диапазоне от 50% до 200% (включительно). Отрицательные значения для этого свойства не допускаются.</td>
+                                </tr>
+                              </table>
+                              <h3>Соотношение ствойств и процентных значений</h3>
+                              <table class="values tb_bg">
+                                <tr class="value">
+                                  <th>Свойство</th>
+                                  <th>Процентное<br>значение</th>
+                                </tr>
+                                <tr class="value">
+                                  <td>ultra-condensed</td>
+                                  <td>50%</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>extra-condensed</td>
+                                  <td>62.5%</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>condensed</td>
+                                  <td>75%</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>semi-condensed</td>
+                                  <td>87.5%</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>normal</td>
+                                  <td>100%</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>semi-expanded</td>
+                                  <td>112.5%</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>expanded</td>
+                                  <td>125%</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>extra-expanded</td>
+                                  <td>150%</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>ultra-expanded</td>
+                                  <td>200%</td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="value">
+                    <td>font-style</td>
+                    <td>Значение font-style. Определяет начертание шрифта — обычное, курсивное или наклонное.</td>
+                  </tr>
+                  <tr class="desc">
+                    <td>&nbsp;</td>
+                    <td>
+                      <div class="spoiler">
+                        <div class="spoiler__item box">
+                          <div class="spoiler__title red_let">Описание</div>
+                          <div class="spoiler__text">
+                            <p>Для определенного семейства шрифтов авторы могут загружать различные начертания шрифтов, которые соответствуют разным стилям одного и того же семейства шрифтов, а затем использовать font-styleдескриптор для явного указания стиля начертания шрифта. Значения дескриптора CSS такие же, как у соответствующего свойства шрифта.</p>
+                            <div class="field">
+                              <h3>Значения</h3>
+                              <table class="values tb_bg">
+                                <tr class="value">
+                                  <td>normal</td>
+                                  <td>Выбирает обычную версию семейства шрифтов.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>italic</td>
+                                  <td>Указывает, что font-face представляет собой курсивную версию обычного шрифта.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>oblique</td>
+                                  <td>Указывает, что font-face является версией обычного шрифта с искусственным уклоном.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>oblique с углом</td>
+                                  <td>Выбирает шрифт, классифицированный как oblique, и дополнительно указывает угол наклона текста.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>oblique с диапазоном углов</td>
+                                  <td>Выбирает шрифт, классифицируемый как oblique, и дополнительно указывает диапазон допустимого угла наклона текста. Обратите внимание, что диапазон поддерживается только в том случае, если он font-styleесть oblique; для font-style: normalили italicне допускается второе значение.</td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="value">
+                    <td>font-weight</td>
+                    <td>Значение font-weight. Устанавливает насыщенность шрифта.</td>
+                  </tr>
+                  <tr class="desc">
+                    <td>&nbsp;</td>
+                    <td>
+                      <div class="spoiler">
+                        <div class="spoiler__item box">
+                          <div class="spoiler__title red_let">Описание</div>
+                          <div class="spoiler__text">
+                            <p>Позволяет авторам указать шрифт веса для шрифтов , указанных в @font-faceправиле. font-weightСвойство может использоваться отдельно , чтобы установить , как должны отображаться толстые или тонкие символы в тексте.</p>
+                            <p>Для определенного семейства шрифтов авторы могут загружать различные начертания шрифтов, которые соответствуют разным стилям одного и того же семейства шрифтов, а затем использовать font-weight дескриптор для явного указания веса начертания шрифта. Значения дескриптора CSS такие же, как у соответствующего свойства шрифта.</p>
+                            <p>Как правило, для определенного семейства шрифтов доступны ограниченные веса. Если указанный вес не существует, используется ближайший вес. Шрифты без полужирного шрифта часто синтезируются пользовательским агентом. Чтобы этого не произошло, используйте font-synthesisсвойство.</p>
+                            <div class="field">
+                              <h3>Значения</h3>
+                              <table class="values tb_bg">
+                                <tr class="value">
+                                  <td>normal</td>
+                                  <td>Нормальный вес шрифта. То же, что и 400.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>bold</td>
+                                  <td>Жирный шрифт. То же, что и 700.</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>Число</td>
+                                  <td>Значение в диапазоне от 1 до 1000 включительно. Более высокие числа обозначают веса, которые жирнее (или полужирнее), чем более низкие числа.</td>
+                                </tr>
+                              </table>
+                            </div>
+                            <p>В более ранних версиях font-weightспецификации свойство принимает только значения ключевых слов и числовые значения 100, 200, 300, 400, 500, 600, 700, 800 и 900; неизменяемые шрифты действительно могут использовать только эти установленные значения, хотя мелкие значения (например, 451) будут преобразованы в одно из этих значений для неизменяемых шрифтов.</p>
+                            <p>CSS Fonts Level 4 расширяет синтаксис, чтобы принимать любое число от 1 до 1000 включительно, и вводит переменные шрифты , которые могут использовать этот гораздо более мелкий диапазон весов шрифтов.</p>
+                            <div class="field">
+                              <h3>Соотношение общих названий и числовых значений</h3>
+                              <table class="values tb_bg">
+                                <tr class="value">
+                                  <td>100</td>
+                                  <td>Thin (Hairline)</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>200</td>
+                                  <td>Extra Light (Ultra Light)</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>300</td>
+                                  <td>Light</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>400</td>
+                                  <td>Normal</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>500</td>
+                                  <td>Medium</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>600</td>
+                                  <td>Semi Bold (Demi Bold)</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>700</td>
+                                  <td>Bold</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>800</td>
+                                  <td>Extra Bold (Ultra Bold)</td>
+                                </tr>
+                                <tr class="value">
+                                  <td>900</td>
+                                  <td>Black (Heavy)</td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="value">
+                    <td>font-variant</td>
+                    <td>Значение font-variant. Определяет, как нужно представлять строчные буквы — оставить их без модификаций или делать их все прописными уменьшенного размера.</td>
+                  </tr>
+                  <tr class="desc">
+                    <td>&nbsp;</td>
+                    <td>
+                      <div class="spoiler">
+                        <div class="spoiler__item box">
+                          <div class="spoiler__title red_let">Описание</div>
+                          <div class="spoiler__text">
+                            <p>Свойство сокращенияfont-variant CSS   позволяет вам установить все варианты шрифтов для шрифтов, указанных в правиле.@font-face</p>
+                            <div class="field">
+                              <h3>Составляющие свойства</h3>
+                              <ul>
+                                <li>font-variant-alternates</li>
+                                <li>font-variant-caps</li>
+                                <li>font-variant-east-asian</li>
+                                <li>font-variant-ligatures</li>
+                                <li>font-variant-numeric</li>
+                              </ul>
+                              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-variant">Детальнее</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="value">
+                    <td>font-feature-settings</td>
+                    <td>Позволяет контролировать другие расширенные особенности OpenType-шрифтов.</td>
+                  </tr>
+                  <tr class="desc">
+                    <td>&nbsp;</td>
+                    <td>
+                      <div class="spoiler">
+                        <div class="spoiler__item box">
+                          <div class="spoiler__title g_let">Описание</div>
+                          <div class="spoiler__text"></div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="value">
+                    <td>font-variation-settings</td>
+                    <td>Позволяет осуществлять низкоуровневый контроль над вариациями OpenType и TrueType шрифтов, указывая четырёхбуквенные названия осей для изменения вместе с их значениями.</td>
+                  </tr>
+                  <tr class="desc">
+                    <td>&nbsp;</td>
+                    <td>
+                      <div class="spoiler">
+                        <div class="spoiler__item box">
+                          <div class="spoiler__title g_let">Описание</div>
+                          <div class="spoiler__text"></div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="value">
+                    <td>src</td>
+                    <td>Задаёт ресурс, содержащий данные шрифта. Это может быть URL-адрес расположения удалённого файла шрифта или имя шрифта на компьютере пользователя.
+
+                      Чтобы дать браузеру возможность выбрать наиболее подходящий формат шрифта, его можно указать при объявлении внутри функции format():
+                      src: url(ideal-sans-serif.woff) format("woff"),
+                           url(basic-sans-serif.ttf) format("opentype");
+                      Список доступных форматов: "woff", "woff2", "truetype", "opentype", "embedded-opentype", и "svg".</td>
+                  </tr>
+                  <tr class="desc">
+                    <td>&nbsp;</td>
+                    <td>
+                      <div class="spoiler">
+                        <div class="spoiler__item box">
+                          <div class="spoiler__title g_let">Описание</div>
+                          <div class="spoiler__text"></div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="value">
+                    <td>unicode-range</td>
+                    <td>Диапазон Unicode кодов, который будет использоваться в шрифте.</td>
+                  </tr>
+                  <tr class="desc">
+                    <td>&nbsp;</td>
+                    <td>
+                      <div class="spoiler">
+                        <div class="spoiler__item box">
+                          <div class="spoiler__title g_let">Описание</div>
+                          <div class="spoiler__text"></div>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                 </table>
               </div>

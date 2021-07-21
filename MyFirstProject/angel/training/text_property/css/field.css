@@ -1,0 +1,14 @@
+/* Блок с заголовками */
+.field h2, .field h3{
+	border-bottom: 2px solid grey;
+	margin-bottom: 10px;
+	font-size: 2em;
+}
+.field h3{
+	font-size: 1.5em;
+}
+
+/* использую абзацы для форматирования кода */
+.field > p{
+	font-family: 'Courier New', Courier, monospace;
+}

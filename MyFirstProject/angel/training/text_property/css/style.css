@@ -1,191 +1,50 @@
-@import "nullstyle.css";
-@import "spoiler.css";
-@font-face {
-	font-family: fontello;
-	src: url(../fonts/fontello.woff2);
-}
-@font-face {
-	font-family: flaticon;
-	src: url(../fonts/flaticon.woff2);
-}
+@import "nullstyle.css"; /* Обнуляющая таблица стилей */
+@import "spoiler.css"; /* Классы для организации споллеров*/
 
+@import "tb_browser.css"; /* стили таблицы версий браузеров*/
+
+@import "ex.css"; /* стили для примеров */
+
+@import "field.css"; /*Блоки с заголовком*/
+
+@import "value.css"; /*таблица "параметр - описание"*/
+
+@import "short_info.css"; /*Краткая информация */
+
+/*==================================================== */
+/*== Дополнительныйе классы для оформления спойлера == */
+/*==================================================== */
+/* убираю декор из краткого описания свойства */
 .spoiler__title>span{
 	text-transform:none;
 	letter-spacing: normal;
 }
-.p10{
-	padding: 10px;
-}
-.ml1{
-	margin-left: 30px;
-}
-.ib{
-	display: inline-block;
-}
+
+/* Красная буквица - есть описание */
 .red_let::first-letter{
 	color: red;
 	font-weight: 700;
 }
+/* серая буквица - нет описания */
 .g_let::first-letter{
 	color: grey;
 	font-weight: 700;
 }
-
+/* серый шрифт для информации об отсутствии описания */
 .txt_grey{
 	color: grey;
 }
-.ex::before{
-	content: 'Пример: ';
-	font-family: initial;
-}
-.ex{
-	display: inline-block;
-	margin: 0 0 0 50px;
-	/* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
-	font-family: monospace;
-}
-.ex_font{
-	font: italic small-caps bold ultra-condensed 15px/20px Arial;
-}
 
-.browser {
-	display: inline-block;
-	background: rgb(211, 190, 190);
-	border: 1px solid rgb(32, 93, 128);
-
-}
-.br-table {
-	/* border-color: white; */
-	background: white;
-}
-
-.br{
-	font-family: fontello;
-	text-align: center;
-	font-size: 25px;
-	color: white;
-	text-shadow: 0 0 4px rgb(109, 57, 57);;
-
-}
-.br td{
-	background: rgb(250, 165, 165);
+/* добавляет отступ */
+.p10{
 	padding: 10px;
 }
-
-.br-type{
-	font-family: flaticon;
-	text-align: center;
-	text-shadow: 0 0 3px white;;
-	color: rgb(107, 80, 80);
-	font-size: 15px;
-	font-weight: 700;
-
-}
-.br-type td{
-	background: rgb(250, 165, 165);
-	padding: 5px;
+.ml30{
+	margin-left: 30px;
 }
 
-.br-v{
-	text-align: center;
-	color: white;
-	/* padding: 10px; */
-	/* font-weight: 700; */
-	font-size: 1.5em;
-}
-.br-v td{
-	background: rgb(172, 90, 90);
-	padding: 5px;
 
-}
-
-.ie::before{
-	content: '\e801';
-}
-
-.ed::before{
-	content: '\e82b';
-}
-.cr::before {
-	content: '\e804';
-}
-.op::before {
-	content: '\e812';
-}
-.sf::before {
-	content: '\e811';
-}
-.fr::before {
-	content: '\e816';
-}
-.aw::before{
-	content: '\e80a';
-}
-
-.pc::before {
-	content: '\e0da';
-}
-.mb::before {
-	content: '\e0d0';
-}
-
-td.ok{
-	color: rgb(250, 165, 165);
-	text-shadow: 0 0 4px black;
-}
-.ok::before{
-	content: '\e81b';
-	font-family: fontello;
-	margin-right: 5px;
-	color: rgb(219, 204, 65);
-
-}
-
-td.no{
-	background: rgb(192, 20, 20);
-
-}
-.no span::before{
-	content: '\e81c';
-	color: white;
-	text-shadow: 1px 1px 3px black;
-	font-family: fontello;
-}
-td.warn{
-	background: rgb(250, 241, 165);
-	color: rgb(172, 90, 90);
-	text-shadow: 1px 1px 4px rgb(250, 165, 165);
-}
-.warn span::before{
-	content: '\e803';
-	font-family: fontello;
-	margin-right: 5px;
-
-}
-
-.field h2{
-	border-bottom: 2px solid grey;
-	font-size: 2em;
-}
-.field h3{
-	border-bottom: 2px solid grey;
-	font-size: 1.5em;
-}
-.field > p{
-	font-family: 'Courier New', Courier, monospace;
-}
-
-.value>td:first-child{
-	white-space: nowrap;
-	font-weight: 700;
-	padding: 0 15px 0 0;
-	vertical-align: text-top;
-}
-.value th{
-	font-size: 1.2em;
-	font-weight: 700;
-}
-
+/* добавляю рамку вокруг спойлера */
 .box{
 	border: 1px solid #000;
 	border-radius: 7px;
@@ -194,21 +53,19 @@ td.warn{
 	text-align: justify;
 
 }
-
 .box>.spoiler__text{
 	padding:  10px;
 }
 
-.description-text h4{
-	font-weight: 700;
-	font-size: 1.2em;
+/* Задаю стиль списка поумолчанию */
+ul li{
+	list-style: square outside;
+	margin-left: 2em;
 }
-.description-text p{
-	margin-left: 20px;
-}
-.tb_bg td{
-	background: lightgray;
-}
-.tb_bg th{
-	background: grey;
+
+/* класс для выделения свойств */
+.html_attr, .css_attr{
+	font-family: 'Courier New', Courier, monospace;
+	font-style: italic;
+	/* font-size: 1.1em; */
 }

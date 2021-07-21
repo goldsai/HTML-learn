@@ -1,0 +1,136 @@
+@font-face {
+	font-family: fontello;
+	src: url(../fonts/fontello.woff2);
+}
+@font-face {
+	font-family: flaticon;
+	src: url(../fonts/flaticon.woff2);
+}
+
+/* Обвертка */
+.browser {
+	display: inline-block;
+	background: rgb(211, 190, 190);
+	border: 1px solid rgb(32, 93, 128);
+}
+
+/* Таблица */
+.br-table {
+	/* border-color: white; */
+	background: white;
+}
+
+/* Строка таблицы с иконками браузеров */
+.br{
+	font-family: fontello;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	text-shadow: 0 0 4px rgb(109, 57, 57);;
+
+}
+/* Ячейка с иконкой браузера */
+.br td{
+	background: rgb(250, 165, 165);
+	padding: 10px;
+}
+
+/* Строка таблицы с иконками ПК или мобилы*/
+.br-type{
+	font-family: flaticon;
+	text-align: center;
+	text-shadow: 0 0 3px white;;
+	color: rgb(107, 80, 80);
+	font-size: 15px;
+	font-weight: 700;
+
+}
+/* Ячейка с иконкой железа*/
+.br-type td{
+	background: rgb(250, 165, 165);
+	padding: 5px;
+}
+
+/* Строка таблицы с версиями браузуров */
+.br-v{
+	text-align: center;
+	color: white;
+	/* padding: 10px; */
+	/* font-weight: 700; */
+	font-size: 1.5em;
+}
+/* Ячейка с версией */
+.br-v td{
+	background: rgb(172, 90, 90);
+	padding: 5px;
+
+}
+
+/* Добавляю символ с изображением браузера*/
+.ie::before{
+	content: '\e801';
+}
+
+.ed::before{
+	content: '\e82b';
+}
+.cr::before {
+	content: '\e804';
+}
+.op::before {
+	content: '\e812';
+}
+.sf::before {
+	content: '\e811';
+}
+.fr::before {
+	content: '\e816';
+}
+.aw::before{
+	content: '\e80a';
+}
+
+.pc::before {
+	content: '\e0da';
+}
+.mb::before {
+	content: '\e0d0';
+}
+
+/* преффикс поддержки */
+td.ok{
+	color: rgb(250, 165, 165);
+	text-shadow: 0 0 4px black;
+}
+.ok span::before{
+	content: '\e81b';
+	font-family: fontello;
+	margin-right: 5px;
+	color: rgb(219, 204, 65);
+
+}
+
+/* префикс неподдержки */
+td.no{
+	background: rgb(192, 20, 20);
+
+}
+.no span::before{
+	content: '\e81c';
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	font-family: fontello;
+}
+
+/* префикс поддержки с ограничениями*/
+td.warn{
+	background: rgb(250, 241, 165);
+	color: rgb(172, 90, 90);
+	text-shadow: 1px 1px 4px rgb(250, 165, 165);
+}
+.warn span::before{
+	content: '\e803';
+	font-family: fontello;
+	margin-right: 5px;
+
+}

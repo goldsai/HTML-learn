@@ -1,0 +1,28 @@
+
+.value>td:first-child{
+	white-space: nowrap;
+	font-weight: 700;
+	padding: 0 15px 0 0;
+	vertical-align: text-top;
+}
+.value th{
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+/* добавляет фон для таблицы */
+.tb_bg td{
+	background: lightgray;
+}
+.tb_bg th{
+	background: grey;
+}
+
+/* форматирование заголовка и текста дополнительного описания */
+.description-text h4{
+	font-weight: 700;
+	font-size: 1.2em;
+}
+.description-text p{
+	margin-left: 20px;
+}

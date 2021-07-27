@@ -4,11 +4,16 @@ body {
   color: #0a143a;
 }
 
-.header {
+.container{
   max-width: 1146px;
   margin: auto;
-  padding-top: 30px;
 }
+
+.header {
+  padding: 30px 0;
+  margin-bottom: 12px;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -16,8 +21,10 @@ body {
   margin-bottom: 24px;
 }
 .logo {
+  padding: 0;
 }
 .logo-mage {
+  padding: 0;
 }
 .navbar-menu {
   margin-right: auto;
@@ -37,6 +44,7 @@ body {
   color: inherit; /*взять цвет у родителя*/
 }
 .button-group {
+  padding: 0;
 }
 .button {
   text-decoration: none;
@@ -79,4 +87,125 @@ body {
 }
 .search-button-text{
    margin-left: 5px;
+}
+
+.page-content{
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 30px;
+}
+
+.main {
+  padding: 0;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.card {
+  margin-bottom: 20px;
+  max-width: 254px;
+}
+.card:not(:nth-child(3n)){
+  margin-right: 20px;
+
+}
+.card-image {
+  border-radius:10px;
+  width: 264px;
+  height: 178px;
+  object-fit: cover;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-link{
+  text-decoration: none;
+}
+.card-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #256EEB;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.like {
+  margin-left: 15px;
+  background: #FFF;
+  border: none;
+  cursor: pointer;
+
+}
+.card-price {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.card-text {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+}
+.sidebar {
+  padding: 0;
+}
+.sidebar hr{
+  border: 1px solid #E5E5E5;
+  height: 0px;
+}
+.sidebar .page-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0A143A;
+}
+.service {
+  margin-bottom: 25px;
+}
+.service-image {
+}
+.service-title {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #0A143A;
+}
+.service-text {
+  max-width: 217px;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #0A143A;
+}
+
+.footer-text {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+}
+.footer-link{
+  display: inline-block;
+  margin-bottom: 5px;
+  color:inherit;
+  text-decoration: none;
+
+}
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 16px;
+}
+.footer-menu-item {
 }

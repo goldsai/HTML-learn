@@ -143,7 +143,6 @@ footer a:active {
 .flex-element {
   background: #c8d414;
   border: 1px solid #f70606;
-  margin: 5px;
 }
 
 .flex-container2 {
@@ -157,6 +156,7 @@ footer a:active {
           flex-flow: row wrap;
   width: 2600px;
   height: 500px;
+  margin: 5px;
 }
 
 .flex-container2 > div {
@@ -164,4 +164,20 @@ footer a:active {
   margin: 15px;
   padding: 10px;
   font-size: 5vw;
+}
+
+.test-margin {
+  margin: 10px auto;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 250px;
+  background: grey;
+  text-align: center;
+}
+
+.test-margin-child {
+  display: inline-block;
+  color: white;
+  width: 25%;
+  background: blue;
 }
